@@ -1,3 +1,42 @@
 from django.db import models
 
-# Create your models here.
+
+class EyeHealth(models.Model):
+    year_start = models.IntegerField(null=True)
+    year_end = models.IntegerField(null=True)
+    location_abbr = models.CharField(max_length=2, null=True)
+    location_desc = models.CharField(max_length=150, null=True)
+    data_source = models.CharField(max_length=150, null=True)
+    topic = models.CharField(max_length=150, null=True)
+    category = models.CharField(max_length=150, null=True)
+    question = models.CharField(max_length=150, null=True)
+    response = models.CharField(max_length=150, null=True)
+    age = models.CharField(max_length=150, null=True)
+    gender = models.CharField(max_length=150, null=True)
+    race_ethnicity = models.CharField(max_length=150, null=True)
+    risk_factor = models.CharField(max_length=150, null=True)
+    risk_factor_response = models.CharField(max_length=150, null=True)
+    data_value_unit = models.CharField(max_length=150, null=True)
+    data_value_type = models.CharField(max_length=150, null=True)
+    data_value = models.CharField(max_length=150, null=True)
+    data_value_footnote_symbol = models.CharField(max_length=150, null=True)
+    data_value_footnote = models.CharField(max_length=150, null=True)
+    low_confidence_limit = models.FloatField(null=True, blank=True)
+    high_confidence_limit = models.FloatField(null=True, blank=True)
+    numerator = models.CharField(max_length=150, null=True)
+    sample_size = models.IntegerField(null=True)
+    location_ID = models.IntegerField(null=True)
+    topic_ID = models.CharField(max_length=150, null=True)
+    category_ID = models.CharField(max_length=150, null=True)
+    question_ID = models.CharField(max_length=150, null=True)
+    response_ID = models.CharField(max_length=150, null=True)
+    data_value_type_ID = models.CharField(max_length=150, null=True)
+    age_ID = models.CharField(max_length=150, null=True)
+    gender_ID = models.CharField(max_length=150, null=True)
+    race_ethnicity_ID = models.CharField(max_length=150, null=True)
+    risk_factor_ID = models.CharField(max_length=150, null=True)
+    risk_factor_response_ID = models.CharField(max_length=150, null=True)
+    geo_location = models.CharField(max_length=150, null=True)
+
+    def __str__(self):
+        return self.year_start
