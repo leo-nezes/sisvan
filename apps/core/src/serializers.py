@@ -5,4 +5,4 @@ from ..models import EyeHealth
 class EyeHealthSerializer(ModelSerializer):
     class Meta:
         model = EyeHealth
-        fields = '__all__'
+        fields = ('id', )
