@@ -15,7 +15,7 @@ Intalação dos seguntes softwares:
 - [PostgreSQL](https://www.postgresql.org/download/)
 
 ### 2. Configurando 
-## 2.1 Ambiente de desenvolvimento
+#### 2.1 Ambiente de desenvolvimento
 Clonar o projeto
 
 `git clone LINK_DO_PROJETO`
@@ -32,12 +32,12 @@ Abrir o prjeto pelo Pycharm,  e no terminal, criar ambiente virtual
 
 `pipenv --three`
 
-## 2.2 Base de dados
+#### 2.2 Base de dados
 No postgreSQL, criar uma base de dados chamada **sisvan**
 
 Na aplicação, abrir o arquivo **config/settings.py**, e certifique-se que os parâmetros **USER**, **PASSWORD**, **HOST** e **PORT** estão corretos.
 
-## 2.3 Aplicação
+#### 2.3 Aplicação
 Ativar ambiente virtual
 
 `pipenv shell`
