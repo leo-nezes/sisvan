@@ -13,6 +13,7 @@ Intalação dos seguntes softwares:
 - [Git](https://git-scm.com/downloads)
 - [Python 3.8.6](https://www.python.org/downloads/)
 - [PostgreSQL](https://www.postgresql.org/download/)
+- [DBeaver](https://dbeaver.io/download/)
 
 ### 2. Configurando 
 #### 2.1 Ambiente de desenvolvimento
