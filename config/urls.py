@@ -16,10 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework import routers
-from apps.core.src.viewsets import EyeHealthViewSet
+from apps.core.src.viewsets import PesoIdadeViewSet
 
 router = routers.DefaultRouter()
-router.register('eyehealth', EyeHealthViewSet)
+router.register('pesoidade', PesoIdadeViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),

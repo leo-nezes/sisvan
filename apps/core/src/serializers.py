@@ -1,8 +1,8 @@
 from rest_framework.serializers import ModelSerializer
-from ..models import EyeHealth
+from ..models import PesoIdade
 
 
-class EyeHealthSerializer(ModelSerializer):
+class PesoIdadeSerializer(ModelSerializer):
     class Meta:
-        model = EyeHealth
+        model = PesoIdade
         fields = '__all__'
