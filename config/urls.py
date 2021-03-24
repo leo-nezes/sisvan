@@ -19,7 +19,7 @@ from rest_framework import routers
 from apps.core.src.viewsets import PesoIdadeViewSet
 
 router = routers.DefaultRouter()
-router.register('pesoidade', PesoIdadeViewSet)
+router.register('pesoidade', PesoIdadeViewSet, basename='pesoIdade')
 
 urlpatterns = [
     path('', include(router.urls)),
