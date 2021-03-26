@@ -5,7 +5,7 @@ class PesoIdade(models.Model):
     regiao = models.CharField(max_length=50)
     codigo_uf = models.IntegerField()
     uf = models.CharField(max_length=2)
-    codigo_ibge = models.CharField(max_length=6)
+    codigo_ibge = models.IntegerField()
     municipio = models.CharField(max_length=255)
     PMB_quantidade = models.IntegerField()
     PMB_porcentagem = models.FloatField()
